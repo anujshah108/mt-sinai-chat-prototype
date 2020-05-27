@@ -60,6 +60,10 @@ NOTE: If user has previously logged in before it will just re-render all their p
 
 Step 3 - User can type any number of other messages that append to the window chat room and a message counter at top increments up as each message is added live.
 
-NOTE: The message counter counts the number of messages the user themselves have typed not total. This was done intentionally by adding a filter to the count.
+NOTE: The message counter counts the number of messages the user themselves have typed not total. This was done intentionally by adding a filter to the count. To display total messages this would be a quick fix in:
+
+```
+Toolbar.tsx line 16
+```
 
 ![Chat](images/chat.png)
