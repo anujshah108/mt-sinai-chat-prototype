@@ -47,11 +47,11 @@ npm run start
 Page 1:
 Step 1 - Welcomes user and collects one input field, email. Offers “join chat” button.
 
+![SignIn](images/signin.png)
+
 Page 2:
 
 Step 1 - User transitioned to a chat window which shows a message with their email that they joined the chat.
-
-![alt text](./images/signin)
 
 Step 2 - System automatically emits a welcome message introducing our Mount Sinai helper bot.
 
@@ -61,4 +61,4 @@ Step 3 - User can type any number of other messages that append to the window ch
 
 NOTE: The message counter counts the number of messages the user themselves have typed not total. This was done intentionally by adding a filter to the count.
 
-![alt text](./images/chat)
+![Chat](images/chat.png)
