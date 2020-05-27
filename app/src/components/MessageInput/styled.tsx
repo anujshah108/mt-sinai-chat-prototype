@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 export const MessageInputWrapper = styled.div<{ mine?: boolean }>`
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
   background: white;
