@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MessageInput, MessageInputWrapper } from "./styled";
+import { MessageInput, MessageInputWrapper, MessageSendButton } from "./styled";
 import { Message } from "../MessageContainer.tsx/MessageContainer";
 
 interface InputProps {
@@ -35,7 +35,7 @@ export default function Compose(props: InputProps) {
         type="text"
         onKeyDown={(e) => (e.key === "Enter" ? handleSubmit() : undefined)}
       />
-      <button onClick={() => handleSubmit()}> Send </button>
+      <MessageSendButton onClick={() => handleSubmit()}>Send</MessageSendButton>
     </MessageInputWrapper>
   );
 }

@@ -28,6 +28,14 @@ export const MessageInput = styled.input`
   padding-left: 10px;
   ::placeholder {
     opacity: 0.3;
-    padding-left: 10px;
   }
+`;
+
+export const MessageSendButton = styled.button`
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #4e9af1;
+  color: white;
+  margin-left: 2px;
 `;

@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import { Messenger } from "./components/Messenger/Messenger";
 import Login from "./components/Login/Login";
 import { connect } from "./socket";
 import { Message } from "./components/MessageContainer.tsx/MessageContainer";
+import styled from "styled-components/macro";
+
+const AppWrapper = styled.div`
+  text-align: center;
+`;
 
 const App = () => {
   const [email, setEmail] = useState("");
@@ -21,7 +25,7 @@ const App = () => {
   );
 
   return (
-    <div className="App">
+    <AppWrapper>
       {!email ? (
         <Login setEmail={setEmail} />
       ) : (
@@ -31,7 +35,7 @@ const App = () => {
           setMessageHistory={setMessageHistory}
         />
       )}
-    </div>
+    </AppWrapper>
   );
 };
 

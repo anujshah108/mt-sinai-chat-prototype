@@ -29,7 +29,6 @@ export const LoginInput = styled.input`
   padding-left: 10px;
   ::placeholder {
     opacity: 0.3;
-    padding-left: 10px;
   }
 `;
 
