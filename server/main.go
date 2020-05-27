@@ -32,6 +32,7 @@ var upgrader = websocket.Upgrader{
 	CheckOrigin:     func(r *http.Request) bool { return true },
 }
 
+// WebSocket message reader
 func reader(conn *websocket.Conn) {
 	for {
 
@@ -56,7 +57,7 @@ func reader(conn *websocket.Conn) {
 	}
 }
 
-// WebSocket endpoint
+// WebSocket endpoint instantiation
 func serveWs(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(r.Host)
 	ws, err := upgrader.Upgrade(w, r, nil)
