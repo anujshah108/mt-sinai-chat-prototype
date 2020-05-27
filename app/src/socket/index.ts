@@ -25,4 +25,8 @@ let sendMsg = (msg: Message) => {
   socket.send(JSON.stringify(msg));
 };
 
-export { connect, sendMsg };
+let closeSocket = () => {
+  socket.close();
+};
+
+export { connect, sendMsg, closeSocket };
