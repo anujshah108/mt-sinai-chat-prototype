@@ -85,8 +85,6 @@ func main() {
 
 	r.GET("/messages/:email", GetMessages)
 	r.Run("localhost:8080")
-
-	fmt.Println("Mount sinai helper bot activated")
 }
 
 func GetMessages(c *gin.Context) {
