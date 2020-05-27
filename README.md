@@ -19,18 +19,19 @@ Styling was done using styled components: https://styled-components.com/
 Please follow below to get environment set up to run app
 
 ```
-Please have the latest npm and node installed on your machine.
-Please have Go version 1.12+ installed on your machine.
+Please have the latest npm and node installed on your machine along with any command line tools.
+Please have Go version 1.12+ installed on your machine along with any command line tools.
 ```
 
 ### Installing and running
 
 Please follow along to get server and then app running to start playinng with app:
 
-1. Please first cd into the server folder from the root directory of the app to run the server
+1. Please first cd into the server folder from the root directory of the app and then run the server
 
 ```
-cd server
+cd server/
+go get
 go run main.go
 ```
 
@@ -39,7 +40,7 @@ The server will then run at localhost:8080
 2. The from the root directory of the app and in a different terminal please cd into the app folder and run the start command:
 
 ```
-cd app
+cd app/
 npm run start
 ```
 
