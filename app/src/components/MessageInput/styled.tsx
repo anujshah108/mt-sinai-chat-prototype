@@ -23,7 +23,7 @@ export const MessageInput = styled.input`
   flex: 1;
   border: none;
   font-size: 14px;
-  height: 40px;
+  height: 30px;
   background: none;
   padding-left: 10px;
   ::placeholder {
@@ -37,5 +37,6 @@ export const MessageSendButton = styled.button`
   border-radius: 4px;
   background-color: #4e9af1;
   color: white;
-  margin-left: 2px;
+  margin-left: 10px;
+  margin-bottom: 5px;
 `;
