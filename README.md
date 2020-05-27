@@ -4,22 +4,23 @@ Chat Prototype for Anuj Shah 5/27/20
 
 ## Description
 
-The application is full stack React and Golang chat prototype:
+The app is full stack React and Golang chat prototype.
 
-The system keeps track of number of messages and a database/persistence layer has been added using: http://gorm.io/ as well as https://github.com/gin-gonic/gin
+It keeps track of the number of messages and a database/persistence layer has been added as well using: http://gorm.io/ & https://github.com/gin-gonic/gin
 
-The system uses web sockets for chat messages using: https://github.com/gorilla/websocket
+The app uses web sockets for chat messages using: https://github.com/gorilla/websocket
 
 For UI side the typescript version of create-react-app was used: https://create-react-app.dev/docs/adding-typescript/
+
+Styling was done using styled components: https://styled-components.com/
 
 ### Prerequisites
 
 Please follow below to get environment set up to run app
 
 ```
-Please have npm installed on your machine.
-Please have npx installed on your machine. This can be installed by typing npm install -g npx.
-Please have Go version 1.11+ installed on your machine.
+Please have the latest npm and node installed on your machine.
+Please have Go version 1.12+ installed on your machine.
 ```
 
 ### Installing and running
