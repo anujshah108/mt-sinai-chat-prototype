@@ -27,7 +27,8 @@ Please have Go version 1.12+ installed on your machine along with any command li
 
 Please follow along to get server and then app running to start playinng with app:
 
-1. Please first cd into the server folder from the root directory of the app and then run the server
+1. Please first cd into the server folder from the root directory of the app
+2. Then run ann import of go libraries and the server
 
 ```
 cd server/
@@ -37,10 +38,15 @@ go run main.go
 
 The server will then run at localhost:8080
 
-2. The from the root directory of the app and in a different terminal please cd into the app folder and run the start command:
+---
+
+3. Then from the root directory of the app and in a different terminal
+4. Please install all npm/node libraries
+4. Please cd into the app folder and run the start command
 
 ```
 cd app/
+npm install
 npm run start
 ```
 
