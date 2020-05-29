@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Messenger } from "./components/Messenger/Messenger";
 import Login from "./components/Login/Login";
-import { connect } from "./socket";
+import { connect, closeSocket } from "./socket";
 import { Message } from "./components/MessageContainer.tsx/MessageContainer";
 import styled from "styled-components/macro";
 
@@ -13,16 +13,15 @@ const App = () => {
   const [email, setEmail] = useState("");
   const [messageHistory, setMessageHistory] = useState<Message[]>([]);
 
-  useEffect(
-    () =>
-      connect((msg) => {
-        setMessageHistory((oldMessages) => [
-          ...oldMessages,
-          JSON.parse(msg.data),
-        ]);
-      }),
-    []
-  );
+  useEffect(() => {
+    connect((msg) => {
+      setMessageHistory((oldMessages) => [
+        ...oldMessages,
+        JSON.parse(msg.data),
+      ]);
+    });
+    return () => closeSocket();
+  }, []);
 
   return (
     <AppWrapper>
